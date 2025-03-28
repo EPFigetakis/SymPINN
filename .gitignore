@@ -60,5 +60,7 @@ target/
 
 Org-Data/
 Org-Data/*
+outputs/
+outputs/*
 
 
