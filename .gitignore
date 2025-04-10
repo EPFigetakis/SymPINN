@@ -62,5 +62,7 @@ Org-Data/
 Org-Data/*
 outputs/
 outputs/*
+.pytest_cache/*
+.pytest_cache/
 
 
