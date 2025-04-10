@@ -1,0 +1,23 @@
+name: CI Pipeline
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10.16'
+
+      - name: Install Py Packages
+        run: |
+            pip install -r requirements.txt
+        
+      #- name: Run Unit Tests on Code
+        #run: |
+            #python unit_test.py
